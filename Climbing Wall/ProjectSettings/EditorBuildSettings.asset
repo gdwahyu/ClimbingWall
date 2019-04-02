@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/mainmenu.unity
     guid: c7596672ff827cb4c86ffe00feca6716
-  - enabled: 1
+  - enabled: 0
     path: Assets/RunemarkStudio/tesclimb.unity
     guid: 4b8d8f3b52bdc3144a5693e169c57dce
+  - enabled: 1
+    path: Assets/maingame.unity
+    guid: 748a806af3067dd4db3793cb5e636881
   m_configObjects: {}
