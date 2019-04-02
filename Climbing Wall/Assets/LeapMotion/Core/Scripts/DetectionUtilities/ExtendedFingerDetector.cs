@@ -144,12 +144,12 @@ namespace Leap.Unity {
              if (HandModel.IsTracked && fingerState){
               Activate();
                             grab = true;
-                            Debug.Log("nyala");
+                            //Debug.Log("nyala");
              //tangan terbuka
             } else if(!HandModel.IsTracked || !fingerState) {
               Deactivate();
                             grab = false;
-                            Debug.Log("mati");
+                            //Debug.Log("mati");
             }
           }
         } else if(IsActive){
