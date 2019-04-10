@@ -2,12 +2,12 @@
 
 namespace Leap.Unity {
 
-  /// <summary>
-  /// Use this component on a Game Object to allow it to be manipulated by a pinch gesture.  The component
-  /// allows rotation, translation, and scale of the object (RTS).
-  /// </summary>
-  public class LeapRTS : MonoBehaviour {
-
+    /// <summary>
+    /// Use this component on a Game Object to allow it to be manipulated by a pinch gesture.  The component
+    /// allows rotation, translation, and scale of the object (RTS).
+    /// </summary>
+    public class LeapRTS : MonoBehaviour {
+        
     public enum RotationMethod {
       None,
       Single,
@@ -67,9 +67,11 @@ namespace Leap.Unity {
     private float _defaultNearClip;
 
     void Start() {
-
-            handgrab.grab = true;
+            _pinchDetectorA = gameObject.transform;
+            handgrab = GameObject.Find("Capsule Hand Right").GetComponent<ExtendedFingerDetector>();
+            handgrab.grab = false;
                 GameObject pinchControl = new GameObject("RTS Anchor");
+            Debug.Log("create");
       _anchor = pinchControl.transform;
       _anchor.transform.parent = transform.parent;
       transform.parent = _anchor;

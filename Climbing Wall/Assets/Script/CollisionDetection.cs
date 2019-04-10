@@ -10,11 +10,13 @@ public class CollisionDetection : MonoBehaviour
     private bool flag = false;
     private bool flag2 = false;
     public ExtendedFingerDetector handgrab;
+    private GameObject rtsanchor;
 
     // Start is called before the first frame update
     void Start()
     {
             rtsleap = gameObject.GetComponent<LeapRTS>();
+        rtsanchor = GameObject.Find("RTS Anchor");
 
     }
 
@@ -47,6 +49,10 @@ public class CollisionDetection : MonoBehaviour
              Debug.Log(gameObject.name + "Non active");
             //rtsleap.enabled = false;
             rtsleap = gameObject.GetComponent<LeapRTS>();
+            rtsanchor = GameObject.Find("RTS Anchor");
+            rtsanchor.transform.DetachChildren();
+
+            Destroy(rtsanchor);
             Destroy(rtsleap);
             flag = false;
             flag2 = false;
