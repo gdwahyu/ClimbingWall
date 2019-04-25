@@ -588,6 +588,7 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
     <Compile Include="Assets\RunemarkStudio\Climbing Hall Pack\Scripts\SlotPopulator.cs" />
+    <Compile Include="Assets\Script\CameraController.cs" />
     <Compile Include="Assets\Script\CollisionDetection.cs" />
     <Compile Include="Assets\Script\controllMove.cs" />
     <Compile Include="Assets\Script\controllMovetes.cs" />
